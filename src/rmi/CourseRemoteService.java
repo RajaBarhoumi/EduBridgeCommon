@@ -12,4 +12,5 @@ public interface CourseRemoteService extends Remote {
     List<Course> getAll() throws RemoteException;
     void update(Course course) throws RemoteException;
     void delete(int id) throws RemoteException;
+    List<Course> getCoursesByProfessorId(int professorId) throws RemoteException;
 }

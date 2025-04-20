@@ -8,18 +8,20 @@ public class Course implements Serializable {
     private String title;
     private String description;
     private Level level;
+    private int professorId;
 
     public enum Level {
-        beginner, intermediate, advanced
+        Beginner, Intermediate, Advanced
     }
 
     public Course() {}
 
-    public Course(int id, String title, String description, Level level) {
+    public Course(int id, String title, String description, Level level, int professorId) {
         this.id = id;
         this.title = title;
         this.description = description;
         this.level = level;
+        this.professorId = professorId;
     }
 
     // Getters & Setters
@@ -34,4 +36,7 @@ public class Course implements Serializable {
 
     public Level getLevel() { return level; }
     public void setLevel(Level level) { this.level = level; }
+
+    public int getProfessorId() { return professorId; }
+    public void setProfessorId(int professorId) { this.professorId = professorId; }
 }
