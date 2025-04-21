@@ -71,4 +71,9 @@ public class Test implements Serializable {
     public void setMaxAttempts(int maxAttempts) {
         this.maxAttempts = maxAttempts;
     }
+
+    @Override
+    public String toString() {
+        return title;
+    }
 }

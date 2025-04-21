@@ -39,4 +39,9 @@ public class Course implements Serializable {
 
     public int getProfessorId() { return professorId; }
     public void setProfessorId(int professorId) { this.professorId = professorId; }
+
+    @Override
+    public String toString() {
+        return title;
+    }
 }
