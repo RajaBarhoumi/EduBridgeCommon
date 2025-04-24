@@ -6,15 +6,15 @@ public class Answer implements Serializable {
     private static final long serialVersionUID = 1L;
 
     private int id;
-    private int studentId;
+    private int studentTestId;
     private int questionId;
     private int selectedOptionId;
 
     public Answer() {}
 
-    public Answer(int id, int studentId, int questionId, int selectedOptionId) {
+    public Answer(int id, int studentTestId, int questionId, int selectedOptionId) {
         this.id = id;
-        this.studentId = studentId;
+        this.studentTestId = studentTestId;
         this.questionId = questionId;
         this.selectedOptionId = selectedOptionId;
     }
@@ -28,12 +28,12 @@ public class Answer implements Serializable {
         this.id = id;
     }
 
-    public int getStudentId() {
-        return studentId;
+    public int getStudentTestId() {
+        return studentTestId;
     }
 
-    public void setStudentId(int studentId) {
-        this.studentId = studentId;
+    public void setStudentTestId(int studentTestId) {
+        this.studentTestId = studentTestId;
     }
 
     public int getQuestionId() {
