@@ -14,4 +14,6 @@ public interface TestRemoteService extends Remote {
     void updateTest(Test test) throws RemoteException;
     void deleteTest(int testId) throws RemoteException;
     List<Test> getTestsByStudentId(int studentId) throws RemoteException;
+    int getNumberOfQuestions(int testId) throws RemoteException;
+    int getTestCountByProfessorId(int professorId) throws RemoteException;
 }

@@ -9,4 +9,5 @@ public interface UserRemoteService extends Remote {
     void register(String name, String email, String password, String role) throws RemoteException;
     User login(String email, String password) throws RemoteException;
     User getUserById(int id) throws RemoteException;
+    User getStudentByStudentTestId(int studentTestId) throws RemoteException;
 }

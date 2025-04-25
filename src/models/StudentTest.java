@@ -10,19 +10,17 @@ public class StudentTest implements Serializable {
     private int testId;
     private float score;
     private boolean passed;
-    private boolean certificateGenerated;
     private Timestamp takenDate;
 
     // Constructors
     public StudentTest() {}
 
-    public StudentTest(int id, int studentId, int testId, float score, boolean passed, boolean certificateGenerated, Timestamp takenDate) {
+    public StudentTest(int id, int studentId, int testId, float score, boolean passed, Timestamp takenDate) {
         this.id = id;
         this.studentId = studentId;
         this.testId = testId;
         this.score = score;
         this.passed = passed;
-        this.certificateGenerated = certificateGenerated;
         this.takenDate = takenDate;
     }
 
@@ -67,19 +65,23 @@ public class StudentTest implements Serializable {
         this.passed = passed;
     }
 
-    public boolean isCertificateGenerated() {
-        return certificateGenerated;
-    }
-
-    public void setCertificateGenerated(boolean certificateGenerated) {
-        this.certificateGenerated = certificateGenerated;
-    }
-
     public Timestamp getTakenDate() {
         return takenDate;
     }
 
     public void setTakenDate(Timestamp takenDate) {
         this.takenDate = takenDate;
+    }
+
+    @Override
+    public String toString() {
+        return "StudentTest{" +
+                "id=" + id +
+                ", studentId=" + studentId +
+                ", testId=" + testId +
+                ", score=" + score +
+                ", passed=" + passed +
+                ", takenDate=" + takenDate +
+                '}';
     }
 }

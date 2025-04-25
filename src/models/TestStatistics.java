@@ -10,18 +10,16 @@ public class TestStatistics implements Serializable {
     private int totalAttempts;
     private float averageScore;
     private float passingRate;
-    private Timestamp lastUpdated;
 
     // Constructors
     public TestStatistics() {}
 
-    public TestStatistics(int id, int testId, int totalAttempts, float averageScore, float passingRate, Timestamp lastUpdated) {
+    public TestStatistics(int id, int testId, int totalAttempts, float averageScore, float passingRate) {
         this.id = id;
         this.testId = testId;
         this.totalAttempts = totalAttempts;
         this.averageScore = averageScore;
         this.passingRate = passingRate;
-        this.lastUpdated = lastUpdated;
     }
 
     public TestStatistics(int testId, int totalAttempts, float averageScore, float passingRate) {
@@ -72,11 +70,4 @@ public class TestStatistics implements Serializable {
         this.passingRate = passingRate;
     }
 
-    public Timestamp getLastUpdated() {
-        return lastUpdated;
-    }
-
-    public void setLastUpdated(Timestamp lastUpdated) {
-        this.lastUpdated = lastUpdated;
-    }
 }

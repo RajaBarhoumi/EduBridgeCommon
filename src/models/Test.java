@@ -9,18 +9,15 @@ public class Test implements Serializable {
     private int courseId;
     private int professorId;
     private int timeLimit;
-    private int maxAttempts;
-
     // Constructors
     public Test() {}
 
-    public Test(int id, String title, int courseId, int professorId, int timeLimit, int maxAttempts) {
+    public Test(int id, String title, int courseId, int professorId, int timeLimit) {
         this.id = id;
         this.title = title;
         this.courseId = courseId;
         this.professorId = professorId;
         this.timeLimit = timeLimit;
-        this.maxAttempts = maxAttempts;
     }
 
     // Getters and Setters
@@ -64,16 +61,9 @@ public class Test implements Serializable {
         this.timeLimit = timeLimit;
     }
 
-    public int getMaxAttempts() {
-        return maxAttempts;
-    }
-
-    public void setMaxAttempts(int maxAttempts) {
-        this.maxAttempts = maxAttempts;
-    }
-
     @Override
     public String toString() {
         return title;
     }
+    
 }
