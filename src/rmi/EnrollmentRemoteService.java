@@ -10,4 +10,5 @@ public interface EnrollmentRemoteService extends Remote {
     void enrollStudent(Enrollment enrollment) throws RemoteException;
     List<Enrollment> getEnrollmentsByStudent(int studentId) throws RemoteException;
     void deleteEnrollment(int id) throws RemoteException;
+    public int getCourseCountByStudentId(int studentId) throws RemoteException;
 }

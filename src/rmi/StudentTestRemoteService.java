@@ -15,4 +15,6 @@ public interface StudentTestRemoteService extends Remote {
     void deleteStudentTest(int studentTestId) throws RemoteException;
     String calculateAndUpdateStudentTestScore(int studentTestId) throws RemoteException;
     int getCertificateCountByProfessorId(int professorId) throws RemoteException;
+    int getTestCountByStudentId(int studentId) throws RemoteException;
+    int getCertificateCountByStudentId(int studentId) throws RemoteException;
 }
