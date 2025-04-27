@@ -10,4 +10,6 @@ public interface QuestionRemoteService extends Remote {
     void addQuestion(Question question) throws RemoteException;
     List<Question> getQuestionsByTest(int testId) throws RemoteException;
     void deleteQuestion(int id) throws RemoteException;
+
+    void updateQuestion(Question question) throws RemoteException;
 }
