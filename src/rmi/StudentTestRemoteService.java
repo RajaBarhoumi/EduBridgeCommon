@@ -5,6 +5,7 @@ import models.StudentTest;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.List;
+import java.util.Map;
 
 public interface StudentTestRemoteService extends Remote {
     int addStudentTest(StudentTest studentTest) throws RemoteException;
@@ -17,4 +18,6 @@ public interface StudentTestRemoteService extends Remote {
     int getCertificateCountByProfessorId(int professorId) throws RemoteException;
     int getTestCountByStudentId(int studentId) throws RemoteException;
     int getCertificateCountByStudentId(int studentId) throws RemoteException;
+    List<Map<String, Object>> getStudentTestResults(int studentId) throws RemoteException;
+
 }
